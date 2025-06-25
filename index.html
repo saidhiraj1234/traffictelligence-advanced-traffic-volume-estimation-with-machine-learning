@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Traffic Congestion Prediction</title>
+</head>
+<body>
+    <h2>Enter Traffic Data</h2>
+    <form action="/predict" method="post">
+        <label>Hour (0-23):</label><br>
+        <input type="number" name="hour" required><br><br>
+        <label>Day of Week (0=Sun, 6=Sat):</label><br>
+        <input type="number" name="day_of_week" required><br><br>
+        <label>Vehicle Count:</label><br>
+        <input type="number" name="vehicle_count" required><br><br>
+        <label>Average Speed (km/h):</label><br>
+        <input type="number" name="avg_speed" required><br><br>
+        <label>Weather (0=Clear, 1=Rainy, 2=Foggy):</label><br>
+        <input type="number" name="weather_condition" required><br><br>
+        <input type="submit" value="Predict">
+    </form>
+</body>
+</html>
